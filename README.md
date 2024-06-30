@@ -29,3 +29,14 @@ pnpm run dev # http://localhost:8080
 # unit tests
 pnpm run test
 ```
+
+## 注意
+
+因为需要部署到 Github Pages 的原因, 所以 vite 配置是根据 github pages 来修改的,
+如果需要部署到自己的 Github Pages 需要修改 `vite.config.ts` 的 `base` 选项
+
+```ts
+export default {
+  base: "/your-github-repo-name/",
+};
+```
